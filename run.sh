@@ -8,7 +8,7 @@ cd $CACHE_DIR
 
 if [[ ! -f "${CACHE_DIR}/${JAR_FILE}" ]]; then
   # Download Selenium Standalone Server
-  curl -O http://selenium.googlecode.com/files/$JAR_FILE
+  curl -O http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-java/$VERSION/$JAR_FILE
 fi
 
 # Start Selenium and wait for port 4444 to become available
